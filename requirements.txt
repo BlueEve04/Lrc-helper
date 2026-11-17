@@ -1,0 +1,4 @@
+httpx[http2,brotli]>=0.27
+mutagen>=1.47
+cryptography>=42
+PyYAML>=6.0

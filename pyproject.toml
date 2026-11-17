@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lrc-helper"
+version = "0.1.0"
+description = "Fetch word-synced lyrics from QQ Music, NetEase, Kugou and Lrclib and save LX Music awlrc-embedded LRC files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{name = "BlueEve04"}]
+dependencies = [
+    "httpx[http2,brotli]>=0.27",
+    "mutagen>=1.47",
+    "cryptography>=42",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+lrc-helper = "lrc_helper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 160
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501", "B905", "SIM108", "SIM105"]

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Project
+.cache/
+*.log
+report.jsonl
+.tmp_report.jsonl
+*.tmp
+.test_music/
+.test_library/
+.test_out*/
+.test_bulk/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
